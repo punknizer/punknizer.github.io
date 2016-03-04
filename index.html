@@ -1,63 +1,82 @@
-
 <!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<!-- saved from url=(0026)http://localhost/index.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./index_files/styles.css">
+<link rel="icon" type="image/png" href="http://localhost/img/icon.png">
 
-<html>
-<head>
-<link rel="icon" type="image/png" href="img/icon.png">
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<title>Логгер</title>
-<style>
-  body {
-  background: #fff;
-  max-width: 450px;
-  margin: auto;
-  }
-  divs {
-    width: 100px;
-    height: 100px;
-    background: url(https://docs.google.com/uc?authuser=0&id=0B6xMBV3ebz1_SEZLMEtTdkZjREE&export=download);
-    margin:10px auto;
-  }
-    divs[a] {
-    width: 200px;
-    height: 186px;
-    background: url(https://docs.google.com/uc?authuser=0&id=0B6xMBV3ebz1_ZFRIS0lFanliWVE&export=download);
-    margin:10px auto;
-    border: 2px solid #000;
-    border-radius: 8px;
-  }
-  #div {
-    margin: 5px 0;
-    padding: 5px;
-    background: #eee;
-    border: 1px solid #ccc;
-  }
-  
+<script src="./index_files/jquery.min.js"></script>
+<script>
+	/*
+$(document).ready(function(){
+$("body").on("click", "a", function(e){
 
-  b {
-  display: block;
-  color: #777;
-  font-size: 18pt;
-  font-family: courier new;
-  text-align: center;
-  }
-  b[a] {
-  font-size: 14pt;
-  color: #666;
-  }
-</style>
+	e.preventDefault(); //отменяем переход по ссылке
+	//alert($(this).attr("href"));
+	url = $(this).attr("href");
+	sf = (url.match('main') ? 'main2.php' : (url.match('index') ? 'index2.php' : ''));
+	if(sf == 'none') sf = (location.href.match('main') ? 'main2.php' : (location.href.match('index') ? 'index2.php' : 'none'));
+	url1 = url.replace('main.php','');
+	url1 = url1.replace('index.php','');
+	//alert(sf+url);
+	v="http://"+document.domain+"/"+sf+url1;
+	
+		va="http://localhost/"+$(this).attr("href");
+          $.ajax({ type: "GET", url: v, success: function(response){
+          				$("#locelement").remove();
+                    $("body").html(response);
+//alert(va);
+//window.location.href=va;
+//$.noConflict(false);
+history.pushState("", "", url);
+
+                 }     
+          });
+
+});
+
+
+
+});
+*/
+</script>
+<title>Колонисты 2: Возрождение</title>
+
+
+
+</head>
 <body>
-  <!--b>Колонисты 2:<i> Возрождение</i></b>
-  <div a></div>
-  <b>coming soon</b>
-  <div></div> 
-  <b a> deimon</b-->
-  <div id="div">
-<h2>Бешеные Трупы начинают резню</h1>
-Как и обещал. Пишу небольшой лог по разработке.<br>
-Первой из трёх игр выйдут <a href="http://trupgame.ru">Бешеные Трупы</a>.<br>
-Замысел был как файтер, но смысл резко меняется. Теперь это больше казульная игра.<Br>
-<center></center><img src="http://cs628118.vk.me/v628118827/2b66c/SskjkZgfxpI.jpg" width=50%></center><br>
-<div align="right"><small>от 1.10.2015</small></div><Br>
+<link rel="stylesheet" type="text/css" href="./index_files/styles.css">
+<div id="elementloc" style="background: url(img/bgs/index.jpg) scroll 0 0 ; height: 178px;">
+<div id="onliner"><a href="http://localhost/index.php?page=online">Онлайн: 0</a></div>
+<div id="zag1">Колонисты</div>
+<div id="zag2">возрождение</div>
+<a href="http://localhost/index.php?start" id="start">
+начать игру
+</a>
+<form action="http://localhost/index.php?page=auth" method="post" class="index">
+
+<input name="go_click" value="Войти" type="submit"><table>
+  <tbody><tr>
+    <td><b>Логин:</b></td><td><input name="login"></td>
+  </tr>
+  <tr>
+      <td><b>Пароль:</b></td><td><input name="password" type="password"></td>
+  </tr>
+
+</tbody></table>
+</form>
+
+<a backer=""></a>
 </div>
-</body>
+<div id="about">
+<b><font size="4" color="#aaa">о игре</font><div align="justify">
+XVI век, Вятка. При исследовании леса для основания нового поселения было обнаружено таинственное сооружение, о чём немедленно оповестили царя Ивана Васильевича. Прибывшие, по указу царя, духовники  и архитекторы начали изучение данного артефакта, после чего было принято заключение, что это портал, но куда он ведёт никто сказать не смог. Чтобы разгадать тайну сооружения, царь издал приказ о создании экспедиции. И они активировали артефакт...
+</div>
+</b></div><b>
+
+
+
+
+
+
+</b></body></html>
